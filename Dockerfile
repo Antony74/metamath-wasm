@@ -12,7 +12,6 @@ RUN unzip metamath.zip -d .
 # For convenience also get set.mm
 RUN curl https://raw.githubusercontent.com/metamath/set.mm/develop/set.mm -o set.mm
 
-# And build
-RUN emcc metamath/*.c -o metamath/metamath.html
-
+# And when run, launch the shell
+WORKDIR /app/metamath
 CMD ["sh"]
