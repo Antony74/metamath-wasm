@@ -2,13 +2,13 @@
 
 This is an attempt to build a command line program - the [Metamath proof assistant](http://us.metamath.org/#mmprog) - for WebAssembly (WASM).
 
-Metamath is *highly* portable, so there's no real need to have the command line tool working on WASM.  It does however serve as a very useful milestone towards the goal of having dynamic web-pages about formal Mathematics which make use of Metamath's functionality.
+Metamath is *highly* portable, so there's no real need to have the command line tool working on WASM.  It does however serve as a very useful milestone towards the goal of making use of Metamath's functionality in dynamic JavaScript web-pages.
 
 Here's how it's going:
 
 ## Docker
 
-I'm running in a containerised development environment becuase I find it easier and more convenient than setting it up manually on the host computer, and you can jump ahead straight to where I'm getting stuck.  You might prefer to skip this if you're already set up for emscripten development.  Please bear in mind `emscripten/emsdk` is a bit of a kitchen-sink container, and seem to be about a gigabyte when I downloaded it.
+I'm running in a containerised development environment becuase I find it easier and more convenient than setting it up manually on the host computer, and you can jump ahead straight to where I'm getting stuck with no set up at all.  You might not want to bother with Docker if you're already set up for Emscripten development.  Please bear in mind `emscripten/emsdk` is a bit of a kitchen-sink container, and seemed to be about a gigabyte when I downloaded it.
 
 ```
 docker build -t metamath .
