@@ -8,7 +8,7 @@ Here's how it's going:
 
 ## Docker
 
-I'm running in a containerised development environment becuase I find it easier and more convenient than setting it up manually on the host computer, and you can jump ahead straight to where I'm getting stuck with no set up at all.  You might not want to bother with Docker if you're already set up for Emscripten development.  Please bear in mind `emscripten/emsdk` is a bit of a kitchen-sink container, and seemed to be about a gigabyte when I downloaded it.
+I'm running in a containerised development environment because I find it easier and more convenient than setting it up manually on the host computer, and you can jump ahead straight to where I'm getting stuck with no set up at all.  You might not want to bother with Docker if you're already set up for Emscripten development.  Please bear in mind `emscripten/emsdk` is a bit of a kitchen-sink container, and seemed to be about a gigabyte when I downloaded it.
 
 ```
 docker build -t metamath .
@@ -80,7 +80,7 @@ MM> EXIT
 
 ## Asyncify
 
-We might be able to repeatly tell Metamath we don't have any input for it, for instance by replying with \0 each time, but it would be a shame to have to thrash the system this way.
+We might be able to repeatedly tell Metamath we don't have any input for it, for instance by replying with \0 each time, but it would be a shame to have to thrash the system this way.
 
 We could also change the C source code to accept commands via function calls instead of stdin, but that would give us C code to maintain and keep up to date with the Metamath codebase.
 
@@ -106,7 +106,7 @@ Usually such error messages can just be Googled, by I'm afraid I've had no luck 
 
 ## Conclusion
 
-So yes, I'm afaid I'm a bit stuck at the moment.
+So yes, I'm afraid I'm a bit stuck at the moment.
 
 ## Quick note about source maps
 
