@@ -1,5 +1,11 @@
 # metamath-wasm
 
+* A WAPM build of metamath can be used at https://d1mtql0za68dbm.cloudfront.net/
+* The build scripts can be found at https://github.com/jcaesar/wapm-pkg/tree/master/metamath
+
+As such, the discussion below is out of date.
+## Introduction
+
 This is an attempt to build a command line program - the [Metamath proof assistant](http://us.metamath.org/#mmprog) - for WebAssembly (WASM).
 
 Metamath is *highly* portable, so there's no real need to have the command line tool working on WASM.  It does however serve as a very useful milestone towards the goal of making use of Metamath's functionality in dynamic JavaScript web-pages.
